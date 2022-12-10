@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestorApp.Views.ClientsPage"
+             Title="{Binding Title}"
+             xmlns:local="clr-namespace:GestorApp.ViewModels"
+             xmlns:entities="clr-namespace:GestorApp.Entities"
+             x:Name="BrowseClientsPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Client" Command="{Binding AddClientCommand}"/>
+    </ContentPage.ToolbarItems>
+
+
+    <RefreshView x:DataType="local:ClientsViewModel" Command="{Binding LoadClientsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+        <CollectionView x:Name="ClientsListView" ItemsSource="{Binding Clients}" SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout x:DataType="entities:Client">
+                        <Label Text="{Binding ClientName}" LineBreakMode="NoWrap" FontSize="16"/>
+                        <Label Text="{Binding TotalSpendings}" FontSize="12"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </RefreshView>
+    
+</ContentPage>

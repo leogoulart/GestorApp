@@ -1,0 +1,17 @@
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\obj\Debug\netstandard2.0\GestorApp.csproj.AssemblyReference.cache
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\obj\Debug\netstandard2.0\GestorApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\obj\Debug\netstandard2.0\GestorApp.AssemblyInfoInputs.cache
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\obj\Debug\netstandard2.0\GestorApp.AssemblyInfo.cs
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\obj\Debug\netstandard2.0\GestorApp.csproj.CoreCompileInputs.cache
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\obj\Debug\netstandard2.0\Views\ClientsPage.xaml.g.cs
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\obj\Debug\netstandard2.0\Views\NewClientPage.xaml.g.cs
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\bin\Debug\netstandard2.0\GestorApp.deps.json
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\bin\Debug\netstandard2.0\GestorApp.dll
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\bin\Debug\netstandard2.0\GestorApp.pdb
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\obj\Debug\netstandard2.0\GestorApp.dll
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\obj\Debug\netstandard2.0\refint\GestorApp.dll
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\obj\Debug\netstandard2.0\GestorApp.pdb
+D:\Codding\C#\GestorApp\GestorApp\GestorApp\obj\Debug\netstandard2.0\ref\GestorApp.dll
