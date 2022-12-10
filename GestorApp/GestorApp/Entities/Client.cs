@@ -5,7 +5,7 @@ namespace GestorApp.Entities
 {
     public class Client
     {
-        public byte Id { get; set; }
+        public string Id { get; set; }
         public string ClientName { get; set; }
         public List<Spendings> Spendings { get; set; } = new List<Spendings>();
 

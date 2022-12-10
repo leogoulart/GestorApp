@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using GestorApp.Views;
+using Xamarin.Forms;
 
 namespace GestorApp
 {
@@ -7,6 +8,8 @@ namespace GestorApp
         public AppShell()
         {
             InitializeComponent();
+
+            Routing.RegisterRoute(nameof(NewClientPage), typeof(NewClientPage));
         }
     }
 }

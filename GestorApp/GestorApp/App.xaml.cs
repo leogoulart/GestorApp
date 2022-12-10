@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestorApp.Services;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,6 +11,7 @@ namespace GestorApp
         {
             InitializeComponent();
 
+            DependencyService.Register<GestorDataStore>();
             MainPage = new AppShell();
         }
 

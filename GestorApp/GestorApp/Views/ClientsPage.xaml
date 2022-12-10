@@ -17,7 +17,7 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout x:DataType="entities:Client">
-                        <Label Text="{Binding ClientName}" LineBreakMode="NoWrap" FontSize="16"/>
+                        <Label Text="{Binding ClientName}" LineBreakMode="NoWrap" FontSize="16" TextColor="Black"/>
                         <Label Text="{Binding TotalSpendings}" FontSize="12"/>
                     </StackLayout>
                 </DataTemplate>

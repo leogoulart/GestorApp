@@ -28,7 +28,12 @@ namespace GestorApp.ViewModels
         public Client SelectedClient
         {
             get => _selectedClient;
-            set { _selectedClient = value; }
+            set
+            {
+                SetProperty(ref _selectedClient, value);
+                OnClientSelected(value);
+            }
+            
         }
 
         async Task ExecuteLoadClientsCommand()
@@ -39,7 +44,7 @@ namespace GestorApp.ViewModels
             try
             {
                 Clients.Clear();
-                var clients = await DataStore.GetClientsAsync(true);
+                var clients = await DataStore.GetAllClientsAsync(true);
                 foreach(var client in clients)
                 {
                     Clients.Add(client);
@@ -47,7 +52,7 @@ namespace GestorApp.ViewModels
             }
             catch(Exception ex)
             {
-                await App.Current.MainPage.DisplayAlert("Test Title", ex.Message, "OK");
+                await App.Current.MainPage.DisplayAlert("Application Error!", ex.ToString(), "Ok");
             }
             finally
             {

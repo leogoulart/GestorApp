@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestorApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace GestorApp.Views
         public NewClientPage()
         {
             InitializeComponent();
+            BindingContext = new NewClientViewModel();
         }
     }
 }
