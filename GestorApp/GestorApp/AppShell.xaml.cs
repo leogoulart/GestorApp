@@ -10,6 +10,7 @@ namespace GestorApp
             InitializeComponent();
 
             Routing.RegisterRoute(nameof(NewClientPage), typeof(NewClientPage));
+            Routing.RegisterRoute("clientDetails", typeof(ClientDetailPage));
         }
     }
 }

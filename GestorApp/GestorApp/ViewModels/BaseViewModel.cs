@@ -3,7 +3,6 @@ using GestorApp.Services;
 using System;
 using Xamarin.Forms;
 using System.ComponentModel;
-using System.Text;
 using System.Runtime.CompilerServices;
 using System.Collections.Generic;
 

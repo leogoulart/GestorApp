@@ -76,7 +76,7 @@ namespace GestorApp.ViewModels
             if (client == null)
                 return;
 
-
+            await Shell.Current.GoToAsync($"clientDetails?{nameof(ClientDetailViewModel.ClientId)}={client.Id}");
         }
     }
 }

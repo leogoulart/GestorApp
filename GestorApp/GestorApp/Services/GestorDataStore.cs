@@ -1,8 +1,8 @@
 ﻿using GestorApp.Entities;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace GestorApp.Services
 {
@@ -36,14 +36,14 @@ namespace GestorApp.Services
             return await Task.FromResult(true);
         }
 
-        public Task<bool> DeleteClientAsync(byte id)
+        public Task<bool> DeleteClientAsync(string id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Client> GetClientAsync(byte id)
+        public async Task<Client> GetClientAsync(string id)
         {
-            throw new NotImplementedException();
+            return await Task.FromResult(clients.FirstOrDefault(s => s.Id == id));
         }
 
         public async Task<IEnumerable<Client>> GetAllClientsAsync(bool forceRefresh = false)

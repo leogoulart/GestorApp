@@ -9,8 +9,8 @@ namespace GestorApp.Services
     {
         Task<bool> AddClientAsync(T client);
         Task<bool> UpdateClientAsync(T client);
-        Task<bool> DeleteClientAsync(byte id);
-        Task<T> GetClientAsync(byte id);
+        Task<bool> DeleteClientAsync(string id);
+        Task<T> GetClientAsync(string id);
         Task<IEnumerable<T>> GetAllClientsAsync(bool forceRefresh = false);
     }
 }
